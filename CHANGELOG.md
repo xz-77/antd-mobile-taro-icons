@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/xz-77/antd-mobile-taro-icons/compare/v0.1.1...v0.1.2) (2022-09-23)
+
+### Bug Fixes
+
+- 完善项目构建 ([6a1d07b](https://github.com/xz-77/antd-mobile-taro-icons/commit/6a1d07b0f15b21a35cac8215392db0b3648a5d75))
+
 ### [0.1.1](https://github.com/xz-77/antd-mobile-taro-icons/compare/v0.1.0...v0.1.1) (2022-09-23)
 
 ### Bug Fixes
