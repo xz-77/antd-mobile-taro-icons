@@ -1,9 +1,9 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const gulp = require('gulp');
 const del = require('del');
 const ts = require('gulp-typescript');
 const babel = require('gulp-babel');
 const tsconfig = require('./tsconfig.json');
+const rename = require('gulp-rename');
 
 function clean() {
   return del('./lib/**');
@@ -90,11 +90,23 @@ function buildDeclaration() {
     .pipe(gulp.dest('lib/cjs/'));
 }
 
-exports.default = gulp.series(
-  clean,
-  buildES,
-  buildCJS,
-  gulp.parallel(buildDeclaration, buildStyle),
-  copyAssets,
-  copyMetaFiles
-);
+function cleanGh() {
+  return del('./dist/gh');
+}
+
+function buildGhPage() {
+  return gulp
+    .src(['./src/styles/icon-css/*'])
+    .pipe(
+      rename(function (path) {
+        if (path.basename === 'demo_index') {
+          path.basename = 'index';
+        }
+      })
+    )
+    .pipe(gulp.dest('./dist/gh'));
+}
+
+exports.buildGh = gulp.series(cleanGh, buildGhPage);
+
+exports.buildIcons = gulp.series(clean, buildES, gulp.parallel(buildDeclaration), copyAssets, copyMetaFiles);

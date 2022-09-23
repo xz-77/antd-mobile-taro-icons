@@ -10,3 +10,4 @@ commitlint.config.js
 config/
 global.d.ts
 app.ts
+gulpfile.js
