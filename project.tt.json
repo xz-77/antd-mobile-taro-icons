@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "antd-mobile-taro-icons",
+  "appid": "testAppId",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}
