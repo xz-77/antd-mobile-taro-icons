@@ -26,6 +26,10 @@
     "iconfont",
     "miniProgram"
   ],
+  "main": "./lib/es/index.js",
+  "module": "./lib/es/index.js",
+  "types": "./lib/es/index.d.ts",
+  "typings": "./lib/es/index.d.ts",
   "scripts": {
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
     "lint-staged": "lint-staged",
