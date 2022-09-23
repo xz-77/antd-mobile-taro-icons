@@ -16,7 +16,9 @@
   },
   "sideEffects": [
     "**/*.css",
-    "**/*.less"
+    "**/*.less",
+    "./lib/es/index.js",
+    "./src/index.ts"
   ],
   "files": [
     "lib"
