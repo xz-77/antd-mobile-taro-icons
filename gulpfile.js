@@ -8,12 +8,25 @@ function clean() {
   return del('./lib/**');
 }
 
+function copyIconfontCss() {
+  return gulp
+    .src(['./src/styles/*.{css,woff,ttf}'], {
+      ignore: ['**/demo.css'],
+    })
+    .pipe(gulp.dest('./lib/es/styles'));
+}
+
 function buildES() {
   const tsProject = ts({
     ...tsconfig.compilerOptions,
     module: 'ES2022',
   });
-  return gulp.src(['src/iconfont/**/*.{ts,tsx}']).pipe(tsProject).pipe(gulp.dest('./lib/es'));
+  return gulp
+    .src(['src/**/*.{ts,tsx}'], {
+      ignore: ['**/styles/**/*'],
+    })
+    .pipe(tsProject)
+    .pipe(gulp.dest('./lib/es'));
 }
 
 function copyMetaFiles() {
@@ -27,7 +40,12 @@ function buildDeclaration() {
     declaration: true,
     emitDeclarationOnly: true,
   });
-  return gulp.src(['src/iconfont/**/*.{ts,tsx}']).pipe(tsProject).pipe(gulp.dest('lib/es/'));
+  return gulp
+    .src(['src/**/*.{ts,tsx}'], {
+      ignore: ['**/styles/**/*'],
+    })
+    .pipe(tsProject)
+    .pipe(gulp.dest('lib/es/'));
 }
 
 function cleanGh() {
@@ -36,7 +54,7 @@ function cleanGh() {
 
 function buildGhPage() {
   return gulp
-    .src(['./src/styles/icon-css/*'])
+    .src(['./src/styles/*'])
     .pipe(
       rename(function (path) {
         if (path.basename === 'demo_index') {
@@ -49,4 +67,4 @@ function buildGhPage() {
 
 exports.buildGh = gulp.series(cleanGh, buildGhPage);
 
-exports.buildIcons = gulp.series(clean, buildES, gulp.parallel(buildDeclaration), copyMetaFiles);
+exports.buildIcons = gulp.series(clean, buildES, gulp.parallel(buildDeclaration), copyIconfontCss, copyMetaFiles);
