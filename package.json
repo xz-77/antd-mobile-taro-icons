@@ -1,6 +1,6 @@
 {
   "name": "antd-mobile-taro-icons",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
   "description": "",
   "templateInfo": {
@@ -21,32 +21,16 @@
     "miniProgram"
   ],
   "scripts": {
-    "build:weapp": "taro build --type weapp",
-    "build:swan": "taro build --type swan",
-    "build:alipay": "taro build --type alipay",
-    "build:tt": "taro build --type tt",
-    "build:h5": "taro build --type h5",
-    "build:rn": "taro build --type rn",
-    "build:qq": "taro build --type qq",
-    "build:jd": "taro build --type jd",
-    "build:quickapp": "taro build --type quickapp",
-    "dev:weapp": "npm run build:weapp -- --watch",
-    "dev:swan": "npm run build:swan -- --watch",
-    "dev:alipay": "npm run build:alipay -- --watch",
-    "dev:tt": "npm run build:tt -- --watch",
-    "dev:h5": "npm run build:h5 -- --watch",
-    "dev:rn": "npm run build:rn -- --watch",
-    "dev:qq": "npm run build:qq -- --watch",
-    "dev:jd": "npm run build:jd -- --watch",
-    "dev:quickapp": "npm run build:quickapp -- --watch",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
     "deploy": "gulp buildGh && gh-pages -d dist/gh",
+    "build": "gulp buildIcons",
     "install-peers": "install-peerdeps",
     "release": "standard-version",
     "release:minor": "yarn run release --release-as minor",
-    "release:major": "yarn run release --release-as major"
+    "release:major": "yarn run release --release-as major",
+    "build:all":"yarn run deploy && yarn run build"
   },
   "browserslist": [
     "last 3 versions",
@@ -71,6 +55,7 @@
     "@tarojs/shared": "3.5.5",
     "@tarojs/taro": "3.5.5",
     "@tarojs/taro-h5": "3.5.5",
+    "antd-mobile": "^5.24.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
@@ -103,7 +88,6 @@
     "eslint-plugin-unicorn": "^43.0.0",
     "gh-pages": "^4.0.0",
     "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
     "husky": "^8.0.1",
