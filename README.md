@@ -18,7 +18,7 @@ import { CheckIcon } from 'antd-mobile-taro-icons';
 
 ## Icon 图标
 
-![](https://xz-77.github.io/antd-mobile-taro-icons/)
+[图标网址](https://xz-77.github.io/antd-mobile-taro-icons/)
 
 ## 核心思想
 
