@@ -10,7 +10,7 @@ function clean() {
 
 function copyIconfontCss() {
   return gulp
-    .src(['./src/styles/*.{css,woff,ttf}'], {
+    .src(['./src/styles/*.{css,ttf}'], {
       ignore: ['**/demo.css'],
     })
     .pipe(gulp.dest('./lib/es/styles'));
