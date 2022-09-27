@@ -23,7 +23,7 @@ function buildES() {
   });
   return gulp
     .src(['src/**/*.{ts,tsx}'], {
-      ignore: ['**/styles/**/*'],
+      ignore: ['**/styles/**/*', '**/scripts/**/*'],
     })
     .pipe(tsProject)
     .pipe(gulp.dest('./lib/es'));
@@ -42,7 +42,7 @@ function buildDeclaration() {
   });
   return gulp
     .src(['src/**/*.{ts,tsx}'], {
-      ignore: ['**/styles/**/*'],
+      ignore: ['**/styles/**/*', '**/scripts/**/*'],
     })
     .pipe(tsProject)
     .pipe(gulp.dest('lib/es/'));
