@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/xz-77/antd-mobile-taro-icons/compare/v0.1.4...v0.1.5) (2022-09-27)
+
+### Features
+
+- 更新自动化脚本 ([04c3301](https://github.com/xz-77/antd-mobile-taro-icons/commit/04c330193dc3963e3760677e4a729560d79c0326))
+- 重构-自动化生成 iconfont 组件 ([36aa74b](https://github.com/xz-77/antd-mobile-taro-icons/commit/36aa74b3332d3af31eab938200e55d1da8b1781d))
+
+### Bug Fixes
+
+- 完善构建配置 ([76d4a1a](https://github.com/xz-77/antd-mobile-taro-icons/commit/76d4a1aa989ee3d57b3344fe6865468e1d526a0c))
+
 ### [0.1.4](https://github.com/xz-77/antd-mobile-taro-icons/compare/v0.1.3...v0.1.4) (2022-09-27)
 
 ### Features

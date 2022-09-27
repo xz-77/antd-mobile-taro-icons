@@ -1,6 +1,6 @@
 {
   "name": "antd-mobile-taro-icons",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "基于Taro框架的小程序图标库",
   "author": "7",
   "license": "MIT",
@@ -42,7 +42,7 @@
     "release": "standard-version",
     "release:minor": "yarn run release --release-as minor",
     "release:major": "yarn run release --release-as major",
-    "generate":"ts-node src/scripts/mkdir.ts",
+    "generate": "ts-node src/scripts/mkdir.ts",
     "build:all": "yarn run deploy && yarn run generate && yarn run build"
   },
   "browserslist": [
