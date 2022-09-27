@@ -21,12 +21,5 @@ export function withNativeProps<P extends NativeProps>(props: P, element: ReactE
     };
   }
 
-  // for (const key in props) {
-  //   if (!Object.prototype.hasOwnProperty.call(props, key)) continue;
-  //   if (key.startsWith('data-') || key.startsWith('aria-')) {
-  //     p[key] = props[key];
-  //   }
-  // }
-
   return React.cloneElement(element, p);
 }

@@ -36,9 +36,13 @@ const writeFileContent = (name: string) => {
   const className = formatClassName(name);
   const n = formatIconFnName(name);
 
-  return `import React from 'react';\r
-import Wrapper from '../../wrapper';\r\r
-const ${n} = <Wrapper className="${className}" />;\r\r
+  return `import React, { memo } from 'react';\r
+import { View } from '@tarojs/components';\r
+import { NativeProps, withNativeProps } from '../../utils/native-props';\r
+
+const ${n} = memo<NativeProps>(props => {
+  return withNativeProps(props, <View className='icon iconfont ${className}' />);
+});\r\r
 export default ${n};`;
 };
 
