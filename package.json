@@ -42,7 +42,8 @@
     "release": "standard-version",
     "release:minor": "yarn run release --release-as minor",
     "release:major": "yarn run release --release-as major",
-    "build:all": "yarn run deploy && yarn run build"
+    "generate":"ts-node src/scripts/mkdir.ts",
+    "build:all": "yarn run deploy && yarn run generate && yarn run build"
   },
   "browserslist": [
     "last 3 versions",

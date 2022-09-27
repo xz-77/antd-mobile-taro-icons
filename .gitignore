@@ -26,4 +26,5 @@ yarn-error.log*
 lerna-debug.log*
 
 # src
-src/iconfont
+src/iconfont/
+src/index.ts
