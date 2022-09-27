@@ -10,5 +10,7 @@ module.exports = {
     'react/destructuring-assignment': 0,
     'react/jsx-fragments': 0,
     'react/jsx-no-useless-fragment': 0,
+    'no-restricted-syntax': 0,
+    'no-continue': 0,
   },
 };

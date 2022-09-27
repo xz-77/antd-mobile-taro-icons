@@ -25,5 +25,5 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-#frame
-project.private.config.json
+# src
+src/iconfont
