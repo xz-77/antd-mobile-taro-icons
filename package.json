@@ -67,7 +67,6 @@
     "@tarojs/shared": "3.5.5",
     "@tarojs/taro": "3.5.5",
     "@tarojs/taro-h5": "3.5.5",
-    "antd-mobile": "^5.24.0",
     "classnames": "^2.3.2",
     "fs-extra": "^10.1.0",
     "react": "^18.0.0",
