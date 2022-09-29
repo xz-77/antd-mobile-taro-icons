@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "176307",
+      "name": "attention_fill",
+      "font_class": "attentionfill",
+      "unicode": "e73c",
+      "unicode_decimal": 59196
+    },
+    {
+      "icon_id": "176308",
+      "name": "attention",
+      "font_class": "attention",
+      "unicode": "e73d",
+      "unicode_decimal": 59197
+    },
+    {
+      "icon_id": "833470",
+      "name": "attention_forbid",
+      "font_class": "attentionforbid",
+      "unicode": "e7b2",
+      "unicode_decimal": 59314
+    },
+    {
+      "icon_id": "833471",
+      "name": "attention_forbid_fill",
+      "font_class": "attentionforbidfill",
+      "unicode": "e7b3",
+      "unicode_decimal": 59315
+    },
+    {
       "icon_id": "29943",
       "name": "round_close_fill",
       "font_class": "roundclosefill",
