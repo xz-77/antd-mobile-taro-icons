@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "252290",
+      "name": "add",
+      "font_class": "add1",
+      "unicode": "e767",
+      "unicode_decimal": 59239
+    },
+    {
+      "icon_id": "252291",
+      "name": "move",
+      "font_class": "move",
+      "unicode": "e768",
+      "unicode_decimal": 59240
+    },
+    {
       "icon_id": "176307",
       "name": "attention_fill",
       "font_class": "attentionfill",
