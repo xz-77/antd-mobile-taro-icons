@@ -47,10 +47,14 @@ const ${n} = memo<NativeProps>(props => {
 export default ${n};`;
 };
 
+const cssContent = `import './styles/iconfont.css';\r\r`;
+
 const writeFileExport = (name: string) => {
   const n = formatIconFnName(name);
   return `export { default as ${n} } from './iconfont/${name}';\r`;
 };
+
+fs.writeFileSync(path.resolve(__dirname, '../', 'index.ts'), cssContent, { flag: 'a+' });
 
 for (let i = 0; i < icons.length; i++) {
   const dir = path.resolve(root, icons[i].name);
