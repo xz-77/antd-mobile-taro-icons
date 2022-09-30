@@ -160,13 +160,6 @@
       "unicode_decimal": 59095
     },
     {
-      "icon_id": "38747",
-      "name": "add",
-      "font_class": "add",
-      "unicode": "e6da",
-      "unicode_decimal": 59098
-    },
-    {
       "icon_id": "41957",
       "name": "fold",
       "font_class": "fold",
