@@ -23,6 +23,14 @@
   "files": [
     "lib"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xz-77/antd-mobile-taro-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xz-77/antd-mobile-taro-icons/issues"
+  },
+  "homepage": "https://github.com/xz-77/antd-mobile-taro-icons#readme",
   "keywords": [
     "taro",
     "iconfont",

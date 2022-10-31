@@ -1,5 +1,7 @@
 GitHub 仓库: [antd-mobile-taro-icons](https://github.com/xz-77/antd-mobile-taro-icons)
 
+**喜欢的话，麻烦点个赞，谢谢 🙏**
+
 ## 新手指南
 
 ```bash
